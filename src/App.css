@@ -1,0 +1,259 @@
+/* ===================== General App Styling ===================== */
+
+.App {
+  text-align: center;
+  background-color: #f0f2f5;  /* Light Gray */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #1e213a;  /* Dark Slate */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ===================== Welcome & Contact Buttons ===================== */
+
+.custom-button, .welcome-to-movie-hub {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 15px 30px;
+  background-color: #4A90E2;  /* Primary Blue */
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  width: 300px;
+  margin-top: 10%;
+}
+
+.custom-button:hover, .welcome-to-movie-hub:hover {
+  background-color: #50fa7b;  /* Hover to Green */
+  transform: scale(1.05);
+}
+
+
+/* ===================== Movie Hub Section Button ===================== */
+
+.movie-hub-section {
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 12px 25px;
+  background-color: #FF79C6;  /* Accent Pink */
+  color: #fff;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+.movie-hub-section:hover {
+  background-color: #4A90E2;  /* Hover to Blue */
+}
+
+
+/* ===================== Toggle Button ===================== */
+
+.movie-hub-toggle {
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 12px 25px;
+  background-color: #50fa7b;  /* Secondary Green */
+  color: #1e213a;  /* Dark Text for Contrast */
+  border-radius: 5px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+}
+
+.movie-hub-toggle:hover {
+  background-color: #FF79C6;  /* Pink on Hover */
+}
+
+
+/* ===================== Language Selection ===================== */
+
+.language-selection {
+  background-color: #f5f5fa;  /* Light Lavender */
+  text-align: center;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.language-button {
+  background-color: #4A90E2;  /* Blue */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.language-button:hover {
+  background-color: #50fa7b;  /* Green Hover */
+  transform: scale(1.1);
+}
+
+
+/* ===================== Genre Selection ===================== */
+
+.genre-selection {
+  background-color: #50fa7b;  /* Green */
+  color: #1e213a;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px auto;
+}
+
+
+/* ===================== Movie List ===================== */
+
+.movie-list {
+  background-color: #f0f2f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+/* ===================== Table Styling ===================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+  background-color: #4A90E2;  /* Table Header in Blue */
+  color: white;
+  padding: 16px;
+}
+
+table td {
+  padding: 14px;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa;  /* Alternate Row */
+}
+
+table tr:hover {
+  background-color: #e1f5fe;  /* Light Blue Row Hover */
+}
+
+
+/* ===================== Page Container ===================== */
+
+.page-container {
+  background-color: #f9e6fa;
+}
+
+
+/* ===================== Contact Container ===================== */
+
+.contact-container {
+  text-align: center;
+}
+
+
+/* ===================== Header Styles ===================== */
+
+.header {
+  text-align: center;
+}
+
+
+/* ===================== Movie Title Button ===================== */
+
+.app-title-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px; /* Space between movie button and subtitle */
+  margin-top: 15%;
+}
+
+.app-title-button:hover {
+  background-color: #e5533d;
+}
+
+
+/* ===================== Subtitle Styling ===================== */
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  background-color: #ff6347; /* Matching background color with the buttons */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+
+/* ===================== Blog Button ===================== */
+
+.blog-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.blog-button:hover {
+  background-color: #45a049;
+}
+
+
+/* ===================== Blog Link ===================== */
+
+.blog-link {
+  text-decoration: none;
+}
+.contact-container{
+  margin-left: 25%;
+}
+.contact-details{
+  margin-left: 1%;
+}
+ 
