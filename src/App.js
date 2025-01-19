@@ -6,8 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';  // Importing Bootstrap CSS
 // Lazy load components for performance optimization
 const Blogs = React.lazy(() => import('./pages/Blogs'));
 const Contact = React.lazy(() => import('./pages/Contact'));
-const Home = React.lazy(() => import('./pages/Home'));
-const NoPage = React.lazy(() => import('./pages/NoPage'));
+const Home1 = React.lazy(() => import('./pages/Home1'));  // Updated to Home1
 const Layout = React.lazy(() => import('./pages/Layout'));
 
 // Centralized Loading Component with role="output" for accessibility
@@ -64,12 +63,10 @@ const App = () => {
             element={<Layout toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />}
           >
             {/* Default route */}
-            <Route index element={<Home />} />
+            <Route index element={<Home1 />} />  {/* Updated to Home1 */}
             {/* Other routes */}
             <Route path="blogs" element={<Blogs />} />
             <Route path="contact" element={<Contact />} />
-            {/* Fallback for unmatched routes */}
-            <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
       </Suspense>

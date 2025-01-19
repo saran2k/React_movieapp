@@ -4,7 +4,7 @@ import '../App.css'; // Import CSS for styling and animations
 
 const Layout = ({ toggleDarkMode, isDarkMode }) => {
   const navItems = [
-    { path: "/", label: "Home" },
+    { path: "/", label: "Home1" },
     { path: "/blogs", label: "Blogs" },
     { path: "/contact", label: "Contact" }
   ];

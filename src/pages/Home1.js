@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import '../App.css';  // Import CSS for styling
-import background from '../Assets/Home.jpeg';  // Import the image
+import background from '../Assets/Home.jpeg';  // Import image from src/Assets folder
 
-const Home = () => {
+const Home1 = () => {
   const [showBlogButton, setShowBlogButton] = useState(false);  // State to toggle the blog button visibility
 
   const handleMovieButtonClick = () => {
@@ -11,9 +12,9 @@ const Home = () => {
 
   const bgStyle = {
     backgroundImage: `url(${background})`,
-    height: '100vh',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    height: '100vh',
   };
 
   return (
@@ -25,15 +26,15 @@ const Home = () => {
 
         {/* Conditionally render Blog Button */}
         {showBlogButton && (
-          <a href="http://localhost:3000/blogs" className="blog-link">
+          <Link to="/blogs" className="blog-link">
             <button className="blog-button">
               Book your favorite movies now! Your Ticket to Endless Entertainment!
             </button>
-          </a>
+          </Link>
         )}
       </header>
     </div>
   );
 };
 
-export default Home;
+export default Home1;
